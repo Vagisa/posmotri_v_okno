@@ -36,3 +36,172 @@ ul,
 ol {
   list-style: none;
 }
+
+a {
+  font-family: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+
+.visually-hidden {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.content {
+  padding: 133px 30px;
+  height: 100%;
+  min-height: 800px;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.title {
+  align-self: flex-start;
+  font-family: 'Oswald', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 75px;
+  line-height: 94%;
+  text-transform: uppercase;
+}
+
+.button {
+  height: 34px;
+  width: 100%;
+  border: 1px solid #ffffff;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: inherit;
+  background-color: inherit;
+}
+
+.result {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 16px;
+}
+
+.result__video {
+  width: 100%;
+  height: 386px;
+}
+
+.search-form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-form__fieldset {
+  border: none;
+}
+
+.search-form__fieldset-title {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.6px;
+}
+
+.search-form__textfield {
+  width: 225px;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21.6px;
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  border-left: none;
+  border-right: none;
+}
+
+.search-form__textfield::placeholder {
+  color: inherit;
+}
+
+.search-form__textfield:active {
+  border: 1px solid #fff;
+}
+
+.search-form__checkbox-list {
+  width: 212px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-form__pseudo-checkbox {
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  border: 1px solid #fff;
+}
+
+.search-form__checkbox:checked+.search-form__pseudo-checkbox {
+  background-color: #fff;
+}
+
+.content__details {
+  width: 400px;
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.content__list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.content__list-item {
+  height: 107px;
+}
+
+.content__accent {
+  opacity: 0.5;
+}
+
+.content__video-card {
+  display: flex;
+}
+
+.content__video-card-description-container {
+  width: 200px;
+  flex-shrink: 0;
+}
+
+.content__video-card-title {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.content__video-card-description {
+  font-family: 'Fira Sans Condensed', sans-serif;
+  line-height: 16.2px;
+}
+
+.content__video-card-thumbnail {
+  height: 107px;
+  width: 194px;
+}
+
+.search-form__submit-button {
+  width: 194px;
+  align-self: flex-end;
+}
